@@ -2269,7 +2269,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-require-relative@^0.8.7:
+require-relative@0.8.7, require-relative@^0.8.7:
   version "0.8.7"
   resolved "http://registry.npm.corp.qunar.com/require-relative/download/require-relative-0.8.7.tgz#7999539fc9e047a37928fa196f8e1563dabd36de"
 
@@ -2397,6 +2397,12 @@ rollup-pluginutils@^2.0.1:
   dependencies:
     estree-walker "^0.3.0"
     micromatch "^2.3.11"
+
+rollup-watch@^3.2.2:
+  version "3.2.2"
+  resolved "http://registry.npm.corp.qunar.com/rollup-watch/download/rollup-watch-3.2.2.tgz#5e574232e9ef36da9177f46946d8080cb267354b"
+  dependencies:
+    require-relative "0.8.7"
 
 rollup@^0.41.6:
   version "0.41.6"
