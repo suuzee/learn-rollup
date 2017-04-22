@@ -3,10 +3,10 @@
  * @param  {String} name a name
  * @return {String}      a greeting for `name`
  */
-export function sayHelloTo( name ) {
-  const toSay = `Hello, ${name}!`;
+export function sayHelloTo(name) {
+    const toSay = `Hello, ${name}!`;
 
-  return toSay;
+    return toSay;
 }
 
 /**
@@ -14,8 +14,8 @@ export function sayHelloTo( name ) {
  * @param  {String} name a name
  * @return {String}      a farewell for `name`
  */
-export function sayGoodbyeTo( name ) {
-  const toSay = `Later, ${name}!`;
+export function sayGoodbyeTo(name) {
+    const toSay = `Later, ${name}!`;
 
-  return toSay;
+    return toSay;
 }

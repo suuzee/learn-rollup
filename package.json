@@ -28,7 +28,9 @@
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-eslint": "^3.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "debug": "^2.6.4"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
