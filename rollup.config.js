@@ -4,6 +4,13 @@ import eslint from 'rollup-plugin-eslint';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
+import uglify from 'rollup-plugin-uglify';
+
+// colors
+import 'colors';
+
+const env = process.env.NODE_ENV || 'develoment';
+console.log(env.rainbow);
 
 export default {
     entry: 'src/scripts/main.js',
@@ -27,7 +34,8 @@ export default {
         }),
         replace({
             exclude: 'node_modules/**',
-            ENV: JSON.stringify(process.env.NODE_ENV || 'development')
-        })
+            ENV: JSON.stringify(env)
+        }),
+        (env === 'production' && uglify())
     ]
 }
