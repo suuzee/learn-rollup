@@ -42,7 +42,8 @@
     "rollup-watch": "^3.2.2"
   },
   "dependencies": {
-    "debug": "^2.6.4"
+    "debug": "^2.6.4",
+    "npm-run-all": "^4.0.2"
   },
   "config": {
     "commitizen": {
